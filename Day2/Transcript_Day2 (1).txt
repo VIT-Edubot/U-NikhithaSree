@@ -1,0 +1,52 @@
+
+I. Prompt: What elements should I include in my feedback form?
+Response: Your form should include:
+Text Input for name
+Email Input for email address
+Radio Buttons for satisfaction level
+Dropdown Select for choosing a feature
+Text area for additional comments
+Submit Button to send feedback
+
+II. Prompt: How do I use semantic HTML in my page?
+Response: Use the following semantic elements for better structure:
+
+<header> for the title section
+<nav> for navigation links
+<section> for different parts of the page
+<article> for standalone content like the form
+<footer> for copyright information
+
+III. Prompt: How do I embed a video in HTML?
+Response: Use the <video> tag like this:
+
+<video controls>
+            <source src="https://via.placeholder.com/150" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+IV. Prompt: What challenges might I face while working on this assignment?
+Response: Some common challenges include:
+
+Form layout issues – Aligning input fields properly can be tricky.
+Solution: Use CSS to ensure a clean and organized structure.
+Embedding media correctly – Some browsers may not support certain formats.
+Solution: Provide fallback text and test on different browsers.
+Validation errors – Users might enter incorrect data.
+Solution: Use HTML5 validation attributes (e.g., required, pattern).
+By addressing these challenges, the form will be fully functional and accessible.
+
+V. Prompt: How do I add an audio file in HTML?
+Response: Use the <audio> tag like this:
+<audio controls>
+            <source src="https://via.placeholder.com/150" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+
+VI. Prompt: What future improvements can I make to my page?
+Response:
+
+Replace placeholder media with actual content
+Improve styling using CSS frameworks like Bootstrap
+Enhance accessibility with ARIA labels.
+
