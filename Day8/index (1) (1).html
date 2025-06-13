@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>LaunchDarkly Employee Portal</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="employee-list-heading">Employee List</h2>
+            <div id="employee-list"></div>  <!-- Employee Data Will Be Inserted Here -->
+        </section>
+    </main>
+    
+    <form id="employee-form">
+        <h2>Add New Employee</h2>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="position" placeholder="Position" required />
+        <input type="text" id="department" placeholder="Department" required />
+        <button type="submit" id="submit-btn">Add Employee</button>
+      </form>
+      
+
+    <footer>
+        <p>&copy; 2025 LaunchDarkly. All rights reserved.</p>
+    </footer>
+
+    <script src="employees.js"></script>
+
+</body>
+</html>
