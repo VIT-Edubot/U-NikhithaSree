@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #0055A4; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD700; /* Gold */
+}
+
+h2 {
+    font-size: 24px;
+    color: #0077cc; /* Lighter Blue for better contrast */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #0055A4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback Form Styling */
+#feedback-form {
+    background-color: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd; /* Light gray border */
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea Styling (Block Elements) */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+textarea {
+    resize: vertical; /* Allows resizing only in vertical direction */
+}
+
+/* Inline Form Group (For Radio Buttons & Dropdown) */
+.form-group.inline {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Improved spacing */
+    flex-wrap: wrap;
+}
+
+.form-group input[type="radio"] {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+select {
+    display: inline-block;
+    width: auto;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Video & Audio Section */
+section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+video, audio {
+    max-width: 90%;
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0055A4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #feedback-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-group.inline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+    }
+}

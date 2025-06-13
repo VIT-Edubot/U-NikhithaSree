@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+</head>
+<body class="background">
+    <!-- Header Section -->
+    <header>
+        <h1>User Feedback Form</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Feedback Form Section -->
+    <article>
+        <section id="feedback-form">
+            <h2>We value your feedback!</h2>
+            <form action="#" method="POST">
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required maxlength="100" placeholder="Enter your name">
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <!-- Satisfaction Radio Buttons -->
+                <div class="form-group">
+                    <p>Are you satisfied with the recent updates?</p>
+                    <label>
+                        <input type="radio" name="satisfaction" value="yes" required> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="no"> No
+                    </label>
+                </div>
+
+                <!-- Preferred Feature Dropdown -->
+                <div class="form-group">
+                    <label for="feature">Preferred Feature:</label>
+                    <select id="feature" name="feature" required>
+                        <option value="feature_a">Feature A</option>
+                        <option value="feature_b">Feature B</option>
+                        <option value="feature_c">Feature C</option>
+                    </select>
+                </div>
+
+                <!-- Additional Comments Textarea -->
+                <div class="form-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" maxlength="500" placeholder="Share your thoughts..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </article>
+
+    <!-- Media Embeds Section -->
+    <section>
+        <h2>Learn More About the Updates</h2>
+
+        <!-- Embedded Video -->
+        <video controls>
+            <source src="https://via.placeholder.com/150" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Embedded Audio -->
+        <audio controls>
+            <source src="https://via.placeholder.com/150" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 LaunchDarkly. All rights reserved.</p>
+    </footer>
+</body>
+</html>
