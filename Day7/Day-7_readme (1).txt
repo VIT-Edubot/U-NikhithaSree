@@ -1,0 +1,8 @@
+# Web_Development_Crash_Course_Day_7_Assignment
+For this assignment, I revamped the LaunchDarkly employee portal’s employee management system using JavaScript. I implemented a dynamic feature that displays employee data, filters active employees, sorts them alphabetically, and maps their names to a new array using higher-order functions. Additionally, I added functionality to toggle an employee’s active/inactive status using event listeners, ensuring real-time updates without requiring a page refresh.
+
+To achieve this, I stored employee data in an array of objects, with each object containing details such as id, name, position, department, and isActive status. I used the filter() function to display only active employees, the sort() function to arrange employees alphabetically, and the map() function to create an array of employee names and log them to the console. Through DOM manipulation, I dynamically generated and updated HTML elements, displaying employee details and adding event listeners for interactive functionality.
+
+One of the key challenges I faced was ensuring that employee status updates reflected instantly without refreshing the page. I solved this by dynamically modifying the isActive property when the toggle button was clicked and re-rendering the employee list accordingly. This approach allowed for a seamless user experience.
+
+Moving forward, I plan to enhance the project by adding search functionality to find employees by name, storing employee data persistently using localStorage, and improving the UI with CSS animations. This assignment helped me strengthen my understanding of JavaScript, higher-order functions, and DOM manipulation while reinforcing my ability to create interactive web applications.
