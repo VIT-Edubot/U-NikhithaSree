@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>User Feedback Form</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Feedback Form Section -->
+    <main>
+        <section id="feedback-container">
+            <h2>We value your feedback!</h2>
+            <form id="feedback-form" action="#" method="POST">
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required maxlength="100" placeholder="Enter your name" aria-label="Your Name">
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" aria-label="Your Email">
+                </div>
+
+                <!-- Satisfaction Rating -->
+                <div class="form-group">
+                    <label for="satisfaction">Satisfaction Rating:</label>
+                    <div>
+                        <input type="radio" name="satisfaction" id="rating-1" value="1">
+                        <label for="rating-1">1</label>
+
+                        <input type="radio" name="satisfaction" id="rating-2" value="2">
+                        <label for="rating-2">2</label>
+
+                        <input type="radio" name="satisfaction" id="rating-3" value="3">
+                        <label for="rating-3">3</label>
+
+                        <input type="radio" name="satisfaction" id="rating-4" value="4">
+                        <label for="rating-4">4</label>
+
+                        <input type="radio" name="satisfaction" id="rating-5" value="5">
+                        <label for="rating-5">5</label>
+                    </div>
+
+                    <!-- Error message container for satisfaction -->
+                    <span id="satisfaction-error" class="error-message"></span>
+                </div>
+
+                <!-- Preferred Feature Dropdown -->
+                <div class="form-group">
+                    <label for="feature">Preferred Feature:</label>
+                    <select id="feature" name="feature" required aria-label="Preferred Feature">
+                        <option value="" disabled selected>Select a feature</option>
+                        <option value="feature_a">Feature A</option>
+                        <option value="feature_b">Feature B</option>
+                        <option value="feature_c">Feature C</option>
+                    </select>
+                </div>
+
+                <!-- Additional Comments Textarea -->
+                <div class="form-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Share your thoughts..." aria-label="Additional Comments"></textarea>
+                </div>
+
+                <!-- Rating Message Display -->
+                <div id="rating-message"></div>
+
+                <!-- Submit & Reset Buttons -->
+                <div class="form-group">
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Media Embeds Section -->
+    <section id="media-section">
+        <h2>Learn More About the Updates</h2>
+
+        <!-- Embedded Video -->
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Embedded Audio -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 LaunchDarkly. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript file -->
+    <script src="feedback.js"></script>
+</body>
+</html>
